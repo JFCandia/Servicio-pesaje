@@ -1,36 +1,369 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Servicios de Pesaje y Calibración</title>
-  <style>
-    body { font-family: Arial; margin: 40px; background: #f4f4f4; }
-    h1 { color: #2c3e50; }
-    .section { margin-bottom: 30px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios profesionales de pesaje, calibración de básculas industriales y software especializado para camiones.">
+    <meta name="keywords" content="pesaje, calibración, básculas, camiones, romana, certificación, software">
+    <title>Servicios de Pesaje y Calibración - Soluciones Industriales</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+        }
+
+        .main-service {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-service::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .service-header h2 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+
+        .service-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .service-main-icon {
+            font-size: 4rem;
+            color: #667eea;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .service-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .service-list li strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .contact-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .service-card, .contact-section {
+                padding: 25px;
+            }
+        }
+
+        /* Animation for page load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+    </style>
 </head>
 <body>
-  <h1>Servicios de Pesaje y Calibración</h1>
+    <div class="container">
+        <header class="header">
+            <h1>Servicios de Pesaje y Calibración</h1>
+            <p class="subtitle">Soluciones industriales profesionales para básculas y sistemas de pesaje</p>
+        </header>
 
-  <div class="section">
-    <h2>🔧 Instalación de Romana para Camiones</h2>
-    <p>Diseño, montaje y puesta en marcha de básculas industriales con sensores certificados y software de pesaje integrado.</p>
-  </div>
+        <div class="main-service">
+            <div class="service-header">
+                <i class="fas fa-truck service-main-icon"></i>
+                <h2>Instalación de Romana para Pesaje de Camiones</h2>
+                <p class="service-subtitle">Soluciones integrales para sistemas de pesaje industrial</p>
+            </div>
+        </div>
 
-  <div class="section">
-    <h2>🧪 Calibración y Certificación</h2>
-    <p>Validación técnica con camión patrón, trazabilidad legal y reportes defendibles para auditoría.</p>
-  </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-building service-icon"></i>
+                <h3>Obras Civiles</h3>
+                <ul class="service-list">
+                    <li><strong>Fundación de soporte:</strong> Hormigón armado, con o sin foso, según terreno</li>
+                    <li><strong>Plataforma:</strong> Acero o concreto, tipo tablero o túnel</li>
+                    <li><strong>Nivelación:</strong> Instalación a nivel de piso o sobre nivel, según flujo vehicular</li>
+                </ul>
+            </div>
 
-  <div class="section">
-    <h2>💻 Software de Pesaje</h2>
-    <p>Registro automático, reportes HTML, integración con sistemas contables y simulación sin hardware físico.</p>
-  </div>
+            <div class="service-card">
+                <i class="fas fa-microchip service-icon"></i>
+                <h3>Equipamiento Electrónico</h3>
+                <ul class="service-list">
+                    <li><strong>Celdas de carga:</strong> Sensores certificados OIML clase III para alta precisión</li>
+                    <li><strong>Visores digitales:</strong> Procesadores con interfaz de comunicación (RS232, Ethernet)</li>
+                    <li><strong>Software de pesaje:</strong> Registro automático, reportes exportables, integración ERP/contables</li>
+                    <li><strong>Periféricos opcionales:</strong> Semáforos, barreras, cámaras CCTV, lectores ANPR</li>
+                </ul>
+            </div>
 
-  <div class="section">
-    <h2>📞 Contacto</h2>
-    <p>Correo: candia1978@gmail.com<br>
-       WhatsApp: +56 9 8166 6238</p>
-  </div>
+            <div class="service-card">
+                <i class="fas fa-certificate service-icon"></i>
+                <h3>Calibración y Certificación</h3>
+                <ul class="service-list">
+                    <li><strong>Camión patrón:</strong> Masa patrón certificada para validar básculas</li>
+                    <li><strong>Laboratorio metrológico:</strong> Acreditación INN para trazabilidad legal</li>
+                    <li><strong>Informe técnico:</strong> Evidencia de calibración, trazabilidad y cumplimiento normativo</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-tools service-icon"></i>
+                <h3>Servicios Adicionales</h3>
+                <ul class="service-list">
+                    <li><strong>Diseño y fabricación:</strong> Soluciones personalizadas</li>
+                    <li><strong>Montaje y puesta en marcha:</strong> Instalación profesional</li>
+                    <li><strong>Capacitación:</strong> Entrenamiento y soporte técnico</li>
+                    <li><strong>Mantenimiento:</strong> Programado y atención de urgencia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contáctenos</h2>
+            <p>Estamos aquí para ayudarle con todas sus necesidades de pesaje y calibración</p>
+            
+            <div class="contact-info">
+                <a href="mailto:candia1978@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>candia1978@gmail.com</span>
+                </a>
+                
+                <a href="https://wa.me/56981666238" class="contact-item" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+56 9 8166 6238</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Servicios de Pesaje y Calibración. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>
