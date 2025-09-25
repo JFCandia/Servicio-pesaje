@@ -36,6 +36,30 @@ Página web profesional para ofrecer servicios especializados en pesaje industri
 - **Capacitación:** Entrenamiento y soporte técnico
 - **Mantenimiento:** Programado y atención de urgencia
 
+### ⚖️ **Básculas & Romanas para Pesaje Eje por Eje de Camiones**
+
+#### 📋 **Normativa Legal - Ley N° 19.171 - MOP Chile**
+
+Los sistemas de **Básculas & Romanas para Pesaje Eje por Eje de Camiones** son utilizados principalmente por empresas generadoras de carga para dar cumplimiento a la **Normativa MOP de Chile** que regula el **peso máximo** a transportar por camiones en carretera en todo el territorio nacional.
+
+#### 🎯 **Aplicaciones**
+- ✅ **Cumplimiento normativo MOP** - Regulación de peso máximo en carreteras
+- ✅ **Peso de referencia** - Obtención de valores referenciales de camiones
+- ✅ **Control de carga** - Verificación antes del transporte
+
+#### 📏 **Especificaciones Técnicas**
+- **Exactitud requerida:** Máximo error de **±3%** en la medición de cada eje
+- **Tolerancia:** Baja exigencia de exactitud según normativa
+- **Instalación:** Requiere terreno completamente horizontal y plano, sin ondulaciones
+- **Dimensiones:** El terreno antes y después de la romana debe cubrir el largo completo del camión a medir
+
+#### 🏗️ **Requisitos de Instalación**
+- **Terreno:** Completamente horizontal y nivelado
+- **Superficie:** Sin ondulaciones ni irregularidades  
+- **Espacio anterior:** Longitud suficiente para el camión completo
+- **Espacio posterior:** Longitud suficiente para el camión completo
+- **Normativa:** Cumplimiento Ley N° 19.171 del MOP
+
 ## 🌐 Características del Sitio Web
 
 - ✅ **Diseño Responsive:** Adaptado para móviles, tablets y desktop
